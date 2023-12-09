@@ -1,5 +1,3 @@
-Certainly! Since you used Vite as the build tool, let's update the README file to reflect that. Here's the modified version:
-
 ```markdown
 # Audio Timeline React App with Vite
 
@@ -29,7 +27,7 @@ To get started with this project, follow the steps below:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/audio-timeline-react.git
+   git clone https://github.com/msindisi/msindisi-timeline-assessment.git
    ```
 
 2. Change into the project directory:
@@ -89,7 +87,7 @@ Visit [http://localhost:5173](http://localhost:5173) in your browser to view the
 8. Custom styling using Tailwind CSS.
 
 ## Environment Variables
-The application relies on environment variables for configuration. Ensure to set the following environment variables in your .env file:
+In production i would use Environment Variables. I 
 
 REACT_APP_API_ENDPOINT: The API endpoint for fetching audio timeline data.
 REACT_APP_IMAGE_BASE_URL: The base URL for fetching images.
