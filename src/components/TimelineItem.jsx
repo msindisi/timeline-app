@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 
 const LazyTimelineItem = ({ item, onPlay, onPause }) => {
   const [ setAudioDuration] = useState(null);
-  const imageUrl = process.env.REACT_APP_IMAGE_BASE_URL + item.Image;
-  const iconUrl = process.env.REACT_APP_IMAGE_BASE_URL + item.Icon;
+ // const imageUrl = process.env.REACT_APP_IMAGE_BASE_URL + item.Image;
+ // const iconUrl = process.env.REACT_APP_IMAGE_BASE_URL + item.Icon;
 
   const handlePlay = (title) => {
     onPlay(title);
@@ -30,10 +30,10 @@ const LazyTimelineItem = ({ item, onPlay, onPause }) => {
       </div>
 
       {/* Image */}
-      <img src={imageUrl} alt={item.Title} className="mb-4 rounded" />
+      <img src={`https://arthurfrost.qflo.co.za/${item.Image}`} alt={item.Title} className="mb-4 rounded" />
 
       {/* Icon */}
-      <img src={iconUrl} alt={item.Title} className="mb-4 rounded-full h-[40px]" />
+      <img src={`https://arthurfrost.qflo.co.za/${item.Icon}`} alt={item.Title} className="mb-4 rounded-full h-[40px]" />
 
       {/* MediaName and Category */}
       <div className="flex justify-between items-center mb-4">

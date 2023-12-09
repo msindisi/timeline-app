@@ -11,7 +11,7 @@ const App = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
   const [playingAudio, setPlayingAudio] = useState(null);
-  const apiEndpoint = process.env.REACT_APP_API_ENDPOINT;
+  //const apiEndpoint = process.env.REACT_APP_API_ENDPOINT;
 
 
   const handlePlayAudio = (title) => {
@@ -25,7 +25,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(process.env.REACT_APP_API_ENDPOIN);
+        const response = await fetch('https://arthurfrost.qflo.co.za/php/getTimeline.php');
         const data = await response.json();
 
         // Extract unique categories from the timeline data
