@@ -27,13 +27,13 @@ To get started with this project, follow the steps below:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/msindisi/msindisi-timeline-assessment.git
+   git clone https://github.com/msindisi/timeline-app.git
    ```
 
 2. Change into the project directory:
 
    ```bash
-   cd msindisi-timeline-react
+   cd timeline-app
    ```
 
 3. Install dependencies:
